@@ -26,6 +26,28 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Interactive Theme Selector
+document.addEventListener('DOMContentLoaded', function() {
+    let colorDropdown = document.getElementById('color');
+    
+    // Check if the dropdown exists
+    if (colorDropdown) {
+        colorDropdown.addEventListener('change', function() {
+            let selectedColor = colorDropdown.value;
+
+            if (selectedColor === 'default') {
+                document.body.style.backgroundColor = ''; // Reset to default
+            } else if (selectedColor === 'dark') {
+                document.body.style.backgroundColor = '#333'; // Dark background
+                document.body.style.color = 'white'; // Light text color
+            } else if (selectedColor === 'colorful') {
+                document.body.style.backgroundColor = '#ff6347'; // Tomato color (colorful)
+                document.body.style.color = '#fff'; // Light text color
+            }
+        });
+    } else {
+        console.error('Dropdown element not found!');
+    }
+});
 
 // Show/Hide Bio Feature
 
