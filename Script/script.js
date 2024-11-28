@@ -1,3 +1,4 @@
+// learn more buttons & alerts
 document.addEventListener('DOMContentLoaded', function() {
     // Jemaile's Learn More button event listener
     let jemaileBioButtons = document.getElementsByClassName('Jemaile-bio');
@@ -23,3 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// Interactive Theme Selector
+
+// Show/Hide Bio Feature
+
+// Group Photo Animation
+
