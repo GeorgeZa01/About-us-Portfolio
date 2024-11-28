@@ -7,7 +7,9 @@
     <script src="Script/script.js"></script>
     <title>About Page</title>
     <style>
+       
         /* heading */
+
 header h1{
     text-align: center;
 }
@@ -16,7 +18,11 @@ header h1{
 main{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 20px;
     align-items: center;
+    margin: 0 auto;
 }
 
 /* img */
@@ -26,19 +32,38 @@ section img{
     border-radius: 50%;
 }
 
+/* section */
+section{
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* button container */
+section div{
+    display: flex;
+    gap: 1rem;
+}
+
+section div button{
+    width: 100px;
+}
+
 /* footer */
 footer{
     text-align: center;
 }
 
-/* responsive css */
-@media(max-width:768px){
-    main{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        align-items: center;
+    /* responsive css */
+    @media(max-width:768px){
+        main{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-content: space-around;
+            margin: auto;
+        }
     }
-}
     </style>
 </head>
 <body>
@@ -57,17 +82,18 @@ footer{
 
     <!-- Profiles -->
     <main>
-
         <section>
             <h2>Jemaile Mohamed</h2>
             <img src="images/jemaile.jpg" alt="">
             <p></p>
+            <div>
             <button class="Jemaile-bio">Learn More</button><button class="Hide-Jemaile-Bio">Toggle Bio</button>
+        </div>
         </section>
 
         <section>
             <h2>Chante Wyngaardt</h2>
-            <img src="images/pfp.jpg" alt="">
+            <img src="images/chante.jpg" alt="">
             <p></p>
             <button class="Chante-bio">Learn More</button><button class="Hide-Chante-Bio">Toggle Bio</button>
         </section>
@@ -78,9 +104,6 @@ footer{
             <p></p>
             <button class="Keanan-bio">Learn More</button><button class="Hide-Keanan-Bio">Toggle Bio</button>
         </section>
-
-
-
     </main>
 
     <!-- group photo -->
