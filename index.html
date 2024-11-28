@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+    
     <script src="Script/script.js"></script>
     <title>About Page</title>
+    <style>
+        /* heading */
+header h1{
+    text-align: center;
+}
+
+/* style profiles */
+main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+}
+
+/* img */
+section img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* footer */
+footer{
+    text-align: center;
+}
+
+/* responsive css */
+@media(max-width:768px){
+    main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+}
+    </style>
 </head>
 <body>
 
