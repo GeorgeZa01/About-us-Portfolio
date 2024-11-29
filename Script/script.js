@@ -37,15 +37,21 @@ document.addEventListener('DOMContentLoaded', function() {
             if (selectedColor === 'default') {
                 document.body.style.backgroundColor = ''; // Reset to default
                 document.body.style.color = '#000';
+                 // Select all <section> elements and loop through them
+    let sections = document.querySelectorAll('section');
+    sections.forEach(function(section) {
+        section.style.border = '2px solid #000'; // White border color for each section
+    });
                 
             } 
             else if (selectedColor === 'dark') {
                 document.body.style.backgroundColor = '#333'; // Dark background
                 document.body.style.color = 'white'; // Light text color
+                
               // Select all <section> elements and loop through them
     let sections = document.querySelectorAll('section');
     sections.forEach(function(section) {
-        section.style.border = '2px solid #fff'; // White border color for each section
+        section.style.border = '3px solid #fff'; // White border color for each section
     });
             } else if (selectedColor === 'colorful') {
                 document.body.style.backgroundColor = '#ff6347'; // Tomato color (colorful)
@@ -53,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Select all <section> elements and loop through them
     let sections = document.querySelectorAll('section');
     sections.forEach(function(section) {
-        section.style.border = '2px solid #fff'; // White border color for each section
+        section.style.border = '3px solid #fff'; // White border color for each section
     });
             }
         });
