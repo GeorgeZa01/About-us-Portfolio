@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let jemaileBioButtons = document.getElementsByClassName('Jemaile-bio');
     for (let button of jemaileBioButtons) {
         button.addEventListener('click', function() {
-            alert('Jemaile Mohamed: Call of Duty Black Ops 6, Python is my favorite programming language!');
+            alert('Jemaile Mohamed: Enjoys Call of Duty Black Ops 6, Python is my favorite programming language!');
         });
     }
 
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let chanteBioButtons = document.getElementsByClassName('Chante-bio');
     for (let button of chanteBioButtons) {
         button.addEventListener('click', function() {
-            alert('Chante Wyngaardt: Passionate about design, loves playing chess in free time.');
+            alert('Chante Wyngaardt: Enjoys Baking, favourite programming language is python.');
         });
     }
 
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let keananBioButtons = document.getElementsByClassName('Keanan-bio');
     for (let button of keananBioButtons) {
         button.addEventListener('click', function() {
-            alert('Keanan Oliver: Enthusiast in software engineering, enjoys rock climbing on weekends.');
+            alert('Keanan Oliver: Enjoys reading, favourite programming language is javaScript');
         });
     }
 });
