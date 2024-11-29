@@ -52,6 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Show/Hide Bio Feature
-
+document.addEventListener('DOMContentLoaded', function(){
+    let toggle
+})
 // Group Photo Animation
 
