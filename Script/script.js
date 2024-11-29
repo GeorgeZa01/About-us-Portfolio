@@ -69,8 +69,42 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Show/Hide Bio Feature
-document.addEventListener('DOMContentLoaded', function(){
-    let toggle
-})
+
+function jemaileToggleBtn(){
+    const jemaileToggle = document.querySelector('.Hide-Jemaile-Bio')
+    const jemaileBioText = document.querySelector('.jemaile-bio-text')
+    if (jemaileToggle.classList.contains('show')){
+        jemaileToggle.classList.remove('show')
+        jemaileBioText.style.display = 'none'
+    }else {
+        jemaileToggle.classList.add('show')
+        jemaileBioText.style.display = 'block'
+    }
+}
+
+function chanteToggleBtn(){
+    const chanteToggle = document.querySelector('.Hide-Chante-Bio')
+    const chanteBioText = document.querySelector('.chante-bio-text')
+    if (chanteToggle.classList.contains('show')){
+        chanteToggle.classList.remove('show')
+        chanteBioText.style.display = 'none'
+    }else {
+        chanteToggle.classList.add('show')
+        chanteBioText.style.display = 'block'
+    }
+}
+
+function keananToggleBtn(){
+    const keananToggle = document.querySelector('.Hide-Keanan-Bio')
+    const keananBioText = document.querySelector('.keanan-bio-text')
+    if (keananToggle.classList.contains('show')){
+        keananToggle.classList.remove('show')
+        keananBioText.style.display = 'none'
+    }else {
+        keananToggle.classList.add('show')
+        keananBioText.style.display = 'block'
+    }
+}
+
 // Group Photo Animation
 

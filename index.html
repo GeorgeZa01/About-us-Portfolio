@@ -20,6 +20,13 @@
             align-items: center;
         }
 
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
         /* style select */
         select{
             width: 120px;
@@ -146,27 +153,27 @@
         <section>
             <h2>Jemaile Mohamed</h2>
             <img src="images/jemaile.jpg" alt="">
-            <p>Jemaile Mohamed: Call of Duty Black Ops 6, Python is my favorite programming language!</p>
+            <p class="jemaile-bio-text">Jemaile Mohamed: Call of Duty Black Ops 6, Python is my favorite programming language!</p>
             <div>
-            <button class="Jemaile-bio">Learn More</button><button class="Hide-Jemaile-Bio">Toggle Bio</button>
+            <button class="Jemaile-bio">Learn More</button><button class="Hide-Jemaile-Bio" onclick="jemaileToggleBtn()">Toggle Bio</button>
         </div>
         </section>
 
         <section>
             <h2>Chante Wyngaardt</h2>
             <img src="images/chante.jpg" alt="">
-            <p>Chante Wyngaardt: Passionate about design, loves baking in free time.</p>
+            <p class="chante-bio-text">Chante Wyngaardt: Passionate about design, loves baking in free time.</p>
             <div>
-            <button class="Chante-bio">Learn More</button><button class="Hide-Chante-Bio">Toggle Bio</button>
+            <button class="Chante-bio">Learn More</button><button class="Hide-Chante-Bio" onclick="chanteToggleBtn()">Toggle Bio</button>
             </div>
         </section>
 
         <section>
             <h2>Keanan Oliver</h2>
             <img src="images/keanan.jpg" alt="">
-            <p>Keanan Oliver: Enthusiast in software engineering, enjoys rock climbing on weekends.</p>
+            <p class="keanan-bio-text">Keanan Oliver: Enthusiast in software engineering, enjoys rock climbing on weekends.</p>
             <div>
-            <button class="Keanan-bio">Learn More</button><button class="Hide-Keanan-Bio">Toggle Bio</button>
+            <button class="Keanan-bio">Learn More</button><button class="Hide-Keanan-Bio" onclick="keananToggleBtn()">Toggle Bio</button>
         </div>
         </section>
     </main>
