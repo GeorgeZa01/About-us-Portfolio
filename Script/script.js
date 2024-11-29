@@ -36,7 +36,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (selectedColor === 'default') {
                 document.body.style.backgroundColor = ''; // Reset to default
-            } else if (selectedColor === 'dark') {
+                document.body.style.color = '#000';
+            } 
+            else if (selectedColor === 'dark') {
                 document.body.style.backgroundColor = '#333'; // Dark background
                 document.body.style.color = 'white'; // Light text color
             } else if (selectedColor === 'colorful') {
